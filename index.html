@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Integration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary p-5 ">
+    <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNav">
+      <ul class="navbar-nav d-lg-flex d-none">
+        <li class="nav-item active">
+          <a class="nav-link text-white hoverNav d-none d-sm-block" href="#">Acheter des livres</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white hoverNav d-none d-sm-block" href="#">Consulter des livres</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SECTION TEXTE BOUTON ET IMAGE LIVRE -->
+
+  <div class="bg-primary">
+    <div class="row justify-content-center pb-xxl-5">
+      <div
+        class="col-md-4 col-10 flex-md-column d-flex justify-content-center align-items-start flex-column mb-5 mb-md-0">
+        <p class="text-white text-weight-800 fs-1 texte-titre" style="width: 90%;">Acheter des livres, c’est facile</p>
+        <p class="text-white texte-area" style="width: 85%;">Lorem ipsum dolor sit amet consectetur. Laoreet nunc auctor
+          metus et
+          eu dui mattis. Donec nunc tortor
+          convallis massa cras ac. Amet vulputate faucibus amet nibh nunc non. Est felis aenean risus purus.</p>
+        <button type="button" class="btn btn-secondary boutonBlanc">Voir nos livres</button>
+      </div>
+      <div class="col-md-4">
+        <img class="taille-image d-none d-sm-block" src="/src/img/book.png" alt="">
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SECTION TEXTE, BARRE DE RECHERCHE ET ALERT -->
+
+  <div class="d-flex flex-column align-items-center gap-3 pt-4">
+    <p class="titreSection">Consultez les classiques</p>
+
+    <div class="input-group md-form form-sm form-1 pl-0 w-50 w-md-25 ">
+      <div class="input-group-prepend">
+        <span class="input-group-text purple lighten-3" id="basic-text1"><img src="/src/img/search.svg" alt=""></span>
+      </div>
+      <input class="form-control my-0 py-1" type="text" placeholder="Rechercher un livre"
+        aria-label="Rechercher un livre">
+    </div>
+
+    <svg mlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path
+          d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+      </symbol>
+    </svg>
+
+
+    <div class="alert alert-warning d-md-flex align-items-center w-25 d-none d-sm-block" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
+        <use xlink:href="#exclamation-triangle-fill" />
+      </svg>
+      <div class="margin-droite textSectionAlert">
+        Attention les frais de port ne sont pas inclus
+      </div>
+      <div>
+        <img src="/src/img/x.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION AVEC TOUT LES LIVRES  -->
+
+  <ul class="row justify-content-center flex-column align-items-center flex-md-row py-5 text-left list-unstyled">
+
+    <li class="col-3 d-flex justify-content-center align-items-center flex-column">
+      <div>
+        <img src="/src/img/beaudelaire.png" alt="">
+        <p class="auteur-livre m-0">Baudelaire</p>
+        <p class="titre-livre">Les Fleurs du mal</p>
+      </div>
+    </li>
+
+    <li class="col-3 d-flex justify-content-center align-items-center flex-column">
+      <div>
+        <img src="/src/img/beaudelaire.png" alt="">
+        <p class="auteur-livre m-0">Baudelaire</p>
+        <p class="titre-livre">Les Fleurs du mal</p>
+      </div>
+    </li>
+
+    <li class="col-3 d-flex justify-content-center align-items-center flex-column">
+      <div>
+        <img src="/src/img/beaudelaire.png" alt="">
+        <p class="auteur-livre m-0">Baudelaire</p>
+        <p class="titre-livre">Les Fleurs du mal</p>
+      </div>
+    </li>
+
+    <li class="col-3 d-md-flex d-none justify-content-center align-items-center flex-column">
+      <div>
+        <img src="/src/img/beaudelaire.png" alt="">
+        <p class="auteur-livre m-0">Baudelaire</p>
+        <p class="titre-livre">Les Fleurs du mal</p>
+      </div>
+    </li>
+
+    <li class="col-3 d-md-flex d-none justify-content-center align-items-center flex-column">
+      <div>
+        <img src="/src/img/beaudelaire.png" alt="">
+        <p class="auteur-livre m-0">Baudelaire</p>
+        <p class="titre-livre">Les Fleurs du mal</p>
+      </div>
+    </li>
+
+    <li class="col-3 d-md-flex d-none justify-content-center align-items-center flex-column">
+      <div>
+        <img src="/src/img/beaudelaire.png" alt="">
+        <p class="auteur-livre m-0">Baudelaire</p>
+        <p class="titre-livre">Les Fleurs du mal</p>
+      </div>
+    </li>
+
+    <li class="col-3 d-md-flex d-none justify-content-center align-items-center flex-column">
+      <div>
+        <img src="/src/img/beaudelaire.png" alt="">
+        <p class="auteur-livre m-0">Baudelaire</p>
+        <p class="titre-livre">Les Fleurs du mal</p>
+      </div>
+    </li>
+
+    <li class="col-3 d-md-flex d-none justify-content-center align-items-center flex-column">
+      <div>
+        <img src="/src/img/beaudelaire.png" alt="">
+        <p class="auteur-livre m-0">Baudelaire</p>
+        <p class="titre-livre">Les Fleurs du mal</p>
+      </div>
+    </li>
+
+
+
+
+  </ul>
+
+  <!-- PAGINATION  -->
+
+  <nav aria-label="..." class="d-flex justify-content-center">
+    <ul class="pagination pagination-lg modif-pagination py-4 ">
+      <li class="page-item active rounded">
+        <a class="page-link rounded" href="#" tabindex="-1">1</a>
+      </li>
+      <li class="page-item"><a class="page-link rounded" href="#">2</a></li>
+      <li class="page-item"><a class="page-link rounded" href="#">3</a></li>
+      <li class="page-item"><a class="page-link rounded" href="#">4</a></li>
+    </ul>
+  </nav>
+  </ul>
+
+  <!-- SECTION DU BEST SELLER -->
+
+  <div class="row bg-primary p-5 justify-content-md-evenly">
+    <div class="col-md-4 d-flex justify-content-md-end justify-content-center ">
+      <img class="object-fit-contain" src="src/img/beaudelaire.png" alt="">
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="d-flex d-md-block flex-column align-items-center">
+        <p class="texte-titre">Notre best seller</p>
+        <p class=" texte-area text-center ">Lorem ipsum dolor sit amet consectetur. Laoreet nunc auctor metus et eu dui
+          mattis.
+          Donec nunc
+          tortor convallis massa cras ac. Amet vulputate faucibus amet nibh nunc non. Est felis aenean risus purus.</p>
+        <button type="button" class="btn btn-secondary boutonBlanc">Acheter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION TOP DES VENTES  -->
+
+  <div class="d-flex flex-column align-items-center pb-5">
+    <p class="titreSection py-5">Top des ventes</p>
+    
+      <table class="table table-borderless w-md-75 w-75">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nom</th>
+            <th scope="col" class="d-none d-md-block">Date de sortie</th>
+            <th scope="col">Disponibilité</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td class="text-truncate">Les Fleurs du mal</td>
+            <td class="d-none d-md-block">21/12/2021</td>
+            <td><span class="badge bg-success rounded-pill px-2 py-1">Disponible</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>
+              <div class="col-8 col-md-12 text-truncate">Voyage au bout de la nuit</div>
+            </td>
+            <td class="d-none d-md-block">12/08/2020</td>
+            <td><span class="badge bg-danger rounded-pill px-2 py-1">Rupture</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td class="text-truncate">Don Quichotte</td>
+            <td class="d-none d-md-block">05/02/2016</td>
+            <td><span class="badge bg-success rounded-pill px-2 py-1">Disponible</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+
+  <!-- FOOTER  -->
+
+
+
+  <div class="bg-primary d-flex justify-content-center pt-2">
+    <div class="d-flex text-white p-5 justify-content-evenly flex-column flex-md-row gap-5 py-5">
+      <ul class="list-unstyled">
+        <li>
+          <p class="titre-footer">Navigation</p>
+        </li>
+        <li><a href="" class="text-white text-decoration-none lien-footer">News</a></li>
+        <li><a href="" class="text-white text-decoration-none lien-footer">Acheter des livres</a></li>
+        <li><a href="" class="text-white text-decoration-none lien-footer">Consulter des livres</a></li>
+        <li><a href="" class="text-white text-decoration-none lien-footer">Best Sellers</a></li>
+      </ul>
+
+      <ul class="list-unstyled">
+        <li>
+          <p class="titre-footer">Aide</p>
+        </li>
+        <li><a href="" class="text-white text-decoration-none lien-footer">Prix</a></li>
+        <li><a href="" class="text-white text-decoration-none lien-footer">Comparer</a></li>
+        <li><a href="" class="text-white text-decoration-none lien-footer">Catalogue</a></li>
+        <li><a href="" class="text-white text-decoration-none lien-footer">Sav</a></li>
+      </ul>
+
+      <ul class="list-unstyled">
+        <li>
+          <p class="titre-footer">Navigation</p>
+        </li>
+        <li><a href="" class="text-white text-decoration-none lien-footer">Informations</a></li>
+        <li><a href="" class="text-white text-decoration-none lien-footer">Conditions d’utilisation</a></li>
+        <li><a href="" class="text-white text-decoration-none lien-footer">Mentions légales</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
+
+<style>
+  .texte-titre {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+  }
+
+  .texte-area {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+  }
+
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .hoverNav:hover {
+    color: lightgray !important;
+  }
+
+  .taille-image {
+    height: 452px;
+  }
+
+  .text-weight-800 {
+    font-weight: 800 !important;
+  }
+
+  .boutonBlanc {
+    color: #7749F8;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 16px 24px;
+  }
+
+  .margin-droite {
+    margin-right: 60px;
+  }
+
+  .titreSection {
+    font-size: 28px;
+    font-weight: 700;
+    color: #54595E;
+  }
+
+  .textSectionAlert {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .auteur-livre {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .titre-livre {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .modif-pagination {
+    gap: 10px;
+  }
+
+  titre-footer {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+
+  lien-footer {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 28px !important;
+  }
+</style>

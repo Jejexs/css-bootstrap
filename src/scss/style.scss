@@ -1,0 +1,13 @@
+$primary: #7749F8;
+$secondary: white;
+$success: #28A745;
+$danger: #DC3545;
+$badge-font-size:  7px;
+$pagination-border-radius: 10px solid black;
+$badge-font-size: 10px;
+
+//Override des variables bootstrap scss ici
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
